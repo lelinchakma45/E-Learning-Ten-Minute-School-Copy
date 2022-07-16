@@ -17,7 +17,7 @@
        <div class="right-nav">
            <img src="../images/logo.png" width="130px" height="40px"  />
            <ul>
-               <li><a href=""> ক্লাস ১-১২ </a></li>
+               <li><a href="" class="active"> ক্লাস ১-১২ </a></li>
                <li style="padding: 0">
                     <div class="dropdown">
                       <button class="dropbtn"> কোর্সসমূহ <i class="fa fa-angle-down"></i> </button>
@@ -33,7 +33,7 @@
                 </li>
                <li><a href=""> ভর্তি পরীক্ষা  </a></li>
                <li><a href=""> চাকরি পরীক্ষা  </a></li>
-               <li><a href=""> বই স্টোর </a></li>
+               <li><a href="../books/books.html"> বই স্টোর </a></li>
                
            </ul>
        </div>
@@ -49,6 +49,36 @@
                     </div>
                 </li>
                <li><a href=""><i class="fa fa-sign-in"></i> লগ ইন </a></li>
+               <li> <a id="myBtn"><i class="fa fa-sign-in"></i> রেজিস্ট্রেশন </a>
+               
+                <div id="myModal" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                      <span class="close"><i class="fa fa-close" style="padding: 5px 10px; border: 5px solid; border-radius: 100%" ></i></span>
+                       <form action="/action_page.php">
+                           <div class=" frm">
+                             <h1 style="font-family:'SolaimanLipi';text-align:center"> রেজিস্টার করুন </h1>
+                             <p style="font-family:'SolaimanLipi';text-align:center"> একাউন্টের জন্য নিচের তথ্য গুলো সঠিকভাবে পূরন করুন </p>
+                             <hr>
+
+                             <label for="email"><b> ই-মেইল দিন </b></label>
+                             <input type="text" placeholder="ই-মেইল দিন" name="email" id="email" required>
+
+                             <label for="psw"><b> পাসওয়ার্ড দিন </b></label>
+                             <input type="password" placeholder="পাসওয়ার্ড দিন" name="psw" id="psw" required>
+
+                             <label for="psw-repeat"><b> পাসওয়ার্ডটি আবার দিন </b></label>
+                             <input type="password" placeholder="পাসওয়ার্ডটি আবার দিন" name="psw-repeat" id="psw-repeat" required>
+                             <hr>
+                             <p> একটি অ্যাকাউন্ট তৈরি করে আপনি আমাদের সাথে সম্মত হন <a href="#"> শর্তাবলী এবং গোপনীয়তা </a>.</p>
+
+                             <button type="submit" class="registerbtn">রেজিস্টার করুন</button>
+                           </div>
+                         </form>
+                    </div>
+
+                  </div>
+               </li>
            </ul>
        </div>
    </div>
@@ -181,15 +211,15 @@
             <li><a class="page-link" href="#"><i class="fa fa-angle-left"></i> আগে যান</a></li>
             <li><a class="page-link" href="#"> ক্লাস ০১ </a></li>
             <li><a class="page-link" href="#">ক্লাস ০২</a></li>
-            <li><a class="page-link" href="#">ক্লাস ০৩</a></li>
-            <li><a class="page-link" href="#">ক্লাস ০৪</a></li>
-            <li><a class="page-link" href="#">ক্লাস ০৫</a></li>
-            <li><a class="page-link" href="#">ক্লাস ০৬</a></li>
-            <li><a class="page-link" href="#">ক্লাস ০৭</a></li>
-            <li><a class="page-link" href="#">ক্লাস ০৮</a></li>
+            <li><a class="page-link" href="class345.html">ক্লাস ০৩</a></li>
+            <li><a class="page-link" href="class345.html">ক্লাস ০৪</a></li>
+            <li><a class="page-link" href="class345.html">ক্লাস ০৫</a></li>
+            <li><a class="page-link" href="class678.html">ক্লাস ০৬</a></li>
+            <li><a class="page-link" href="class678.html">ক্লাস ০৭</a></li>
+            <li><a class="page-link" href="class678.html">ক্লাস ০৮</a></li>
             <li><a class="page-link active" href="#">ক্লাস ০৯-১০</a></li>
-            <li><a class="page-link " href="#">ক্লাস ১১-১২</a></li>
-            <li><a class="page-link" href="#" >পরে যান <i class="fa fa-angle-right"></i> </a></li>
+            <li><a class="page-link " href="class1112.html">ক্লাস ১১-১২</a></li>
+            <li><a class="page-link" href="class1112.html" >পরে যান <i class="fa fa-angle-right"></i> </a></li>
         </ul>
     </nav>
    
@@ -396,6 +426,25 @@ function openCity(evt, cityName) {
 
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
+</script>
+<script>
+  var modal = document.getElementById("myModal");
+  
+  var btn = document.getElementById("myBtn");
+  
+  var span = document.getElementsByClassName("close")[0];
+   
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
 </script>
     
 </body>
