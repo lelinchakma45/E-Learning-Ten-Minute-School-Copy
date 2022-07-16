@@ -19,7 +19,7 @@
        <div class="right-nav">
            <img src="../images/logo.png" width="130px" height="40px"  />
            <ul>
-               <li><a href="../Class%25201-12/class345.html"> ক্লাস ১-১২ </a></li>
+               <li><a href="../class1_12/class345.html"> ক্লাস ১-১২ </a></li>
                <li style="padding: 0">
                     <div class="dropdown">
                       <button class="dropbtn"> কোর্সসমূহ <i class="fa fa-angle-down"></i> </button>
@@ -66,6 +66,36 @@
                       </div>
                     </div>
                 </li>
+                <li> <a id="myBtn"><i class="fa fa-sign-in"></i> রেজিস্ট্রেশন </a>
+               
+                  <div id="myModal" class="modal">
+                      <!-- Modal content -->
+                      <div class="modal-content">
+                        <span class="close"><i class="fa fa-close" style="padding: 5px 10px; border: 5px solid; border-radius: 100%" ></i></span>
+                         <form action="/action_page.php">
+                             <div class=" frm">
+                               <h1 style="font-family:'SolaimanLipi';text-align:center"> রেজিস্টার করুন </h1>
+                               <p style="font-family:'SolaimanLipi';text-align:center"> একাউন্টের জন্য নিচের তথ্য গুলো সঠিকভাবে পূরন করুন </p>
+                               <hr>
+  
+                               <label for="email"><b> ই-মেইল দিন </b></label>
+                               <input type="text" placeholder="ই-মেইল দিন" name="email" id="email" required>
+  
+                               <label for="psw"><b> পাসওয়ার্ড দিন </b></label>
+                               <input type="password" placeholder="পাসওয়ার্ড দিন" name="psw" id="psw" required>
+  
+                               <label for="psw-repeat"><b> পাসওয়ার্ডটি আবার দিন </b></label>
+                               <input type="password" placeholder="পাসওয়ার্ডটি আবার দিন" name="psw-repeat" id="psw-repeat" required>
+                               <hr>
+                               <p> একটি অ্যাকাউন্ট তৈরি করে আপনি আমাদের সাথে সম্মত হন <a href="#"> শর্তাবলী এবং গোপনীয়তা </a>.</p>
+  
+                               <button type="submit" class="registerbtn">রেজিস্টার করুন</button>
+                             </div>
+                           </form>
+                      </div>
+  
+                    </div>
+                 </li>
                
            </ul>
        </div>
