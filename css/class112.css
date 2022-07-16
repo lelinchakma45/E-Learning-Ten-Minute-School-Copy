@@ -1,0 +1,102 @@
+p,a,h1,h2,h3,h4{
+    font-family: "SolaimanLipi";
+}
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  background-color: ;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 27.5px;
+  transition: 0.3s;
+  font-size: 17px;
+    border-radius: 10px;
+    font-family: "SolaimanLipi"
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: red;
+    color: #fff
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: red;
+    color: #fff
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 10px 0;
+  border-top: none;
+    
+}
+.tabcontent h3{
+    margin: 0;
+    padding: 30px 0 10px 0;
+    font-weight: 700;
+}
+
+/* Style the close button */
+.topright {
+  float: right;
+  cursor: pointer;
+  font-size: 28px;
+}
+
+.topright:hover {color: red;}
+.tabcontent ul{
+    margin: 0;
+    padding: 10px 0;
+}
+.tabcontent .fa{
+    padding: 10px; border: 1px solid;border-radius: 100%
+}
+.tabcontent li{
+    width: 25%;
+    border-radius:10px;
+    padding: 10px;
+    margin: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.tabcontent li a{
+    text-decoration:none;
+    color:#000;
+    padding: 20px 30px;
+    margin:0 5px;
+    
+}
+  
+.pagination li a {
+    color: #000;       
+}.pagination li a:hover {
+    color: green;       
+}
+.page-link.active {
+            background-color: green;
+            color: white;
+        }
+.page-link.disable {
+            background-color: #e6e6e6;
+            color: white;
+        }
+.page-link.disable:hover {
+            background-color: #e6e6e6;
+            color: white;
+        }
+.page-link.active:hover {
+            background-color: green;
+            color: white;
+        }
