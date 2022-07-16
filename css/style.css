@@ -34,6 +34,10 @@ body{
     border-radius: 10px;
     font-family: 'SolaimanLipi';
 }
+.right-nav ul li a.active{
+    background: red;
+    color: #fff;
+}
 .right-nav ul li a:hover{
     background: red;
     color: #fff
@@ -367,12 +371,7 @@ p{
         }
 
         .testimonials_container_center .active .testimonials_text {
-            background: );
             box-shadow: 0 9px 26px rgba(58, 87, 135, 0.1);
-        }
-
-        .listing-carousel-button {
-
         }
 
         .listing-carousel-button.listing-carousel-button-next {
@@ -418,7 +417,7 @@ p{
   background-color: #f9f9f9;
   min-width: 200px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  z-index: 999999999;
     border-radius: 10px;
 }
 
@@ -455,7 +454,6 @@ p{
     border-radius: 10px;
 }
 .carousel-indicators{
-    margin-top: ;
     position: absolute;
     padding: 0;
 }
@@ -464,23 +462,20 @@ p{
     color: #000
 }
 
-
-/* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px;
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  width: 100%;
+  height: 100%;
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
 }
 
-/* Modal Content */
 .modal-content {
   background-color: #fefefe;
   margin: auto;
@@ -489,7 +484,7 @@ p{
   width: 80%;
 }
 
-/* The Close Button */
+
 .close {
   color: #aaaaaa;
   font-size: 38px;
@@ -507,8 +502,6 @@ p{
     color: #fff;
     cursor: pointer;
 }
-
-/* Add padding to containers */
 .frm {
   padding:0 60px;
   background-color: white;
@@ -517,7 +510,6 @@ p{
     font-family: 'SolaimanLipi';
 }
 
-/* Full-width input fields */
 input[type=text], input[type=password] {
   width: 100%;
   padding: 15px;
@@ -534,13 +526,11 @@ input[type=text]:focus, input[type=password]:focus {
     font-family: 'SolaimanLipi';
 }
 
-/* Overwrite default styles of hr */
 hr {
   border: 1px solid #f1f1f1;
   margin-bottom: 25px;
 }
 
-/* Set a style for the submit button */
 .registerbtn {
   background-color: #04AA6D;
   color: white;
@@ -557,12 +547,10 @@ hr {
   opacity: 1;
 }
 
-/* Add a blue text color to links */
 .frm a {
   color: dodgerblue;
 }
 
-/* Set a grey background color and center the text of the "sign in" section */
 .signin {
   background-color: #f1f1f1;
   text-align: center;
