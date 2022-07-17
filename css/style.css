@@ -466,7 +466,6 @@ p{
   display: none; 
   position: fixed; 
   z-index: 1; 
-  padding-top: 100px;
   left: 0;
   top: 0;
   width: 100%;
@@ -479,9 +478,6 @@ p{
 
 .modal-content {
   background: transparent;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
   width: 0;
   height: 0;
 }
