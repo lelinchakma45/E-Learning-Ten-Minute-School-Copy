@@ -474,14 +474,16 @@ p{
   overflow: auto; 
   background-color: rgb(0,0,0); 
   background-color: rgba(0,0,0,0.4); 
+  justify-content: center;
 }
 
 .modal-content {
-  background-color: #fefefe;
+  background: transparent;
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%;
+  width: 0;
+  height: 0;
 }
 
 
@@ -504,7 +506,7 @@ p{
 }
 .frm {
   padding:0 60px;
-  background-color: white;
+  background-color: transparent;
 }
 .frm label{
     font-family: 'SolaimanLipi';
