@@ -7,17 +7,6 @@ const tooltip_elements = document.querySelectorAll(".tooltip-element");
 
 let activeIndex;
 
-shrink_btn.addEventListener("click", () => {
-  document.body.classList.toggle("shrink");
-  setTimeout(moveActiveTab, 400);
-
-  shrink_btn.classList.add("hovered");
-
-  setTimeout(() => {
-    shrink_btn.classList.remove("hovered");
-  }, 500);
-});
-
 search.addEventListener("click", () => {
   document.body.classList.remove("shrink");
   search.lastElementChild.focus();
