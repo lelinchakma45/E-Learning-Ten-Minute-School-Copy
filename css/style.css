@@ -477,7 +477,7 @@ p{
 }
 
 .modal-content {
-  background: transparent;
+  background: transparent !important;
 }
 
 

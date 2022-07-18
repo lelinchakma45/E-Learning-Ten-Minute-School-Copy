@@ -1,20 +1,19 @@
 .register {
-    background: -webkit-linear-gradient(left, #3931af, #00c6ff);
-    margin-top: 3%;
-    padding: 3%;
+    background:transparent;
 }
 
 .register-left {
     text-align: center;
     color: #fff;
     margin-top: 4%;
+    padding-bottom: 20px;
 }
 
 .register-left input {
     border: none;
     border-radius: 1.5rem;
     padding: 2%;
-    width: 60%;
+    width: 100%;
     background: #f8f9fa;
     font-weight: bold;
     color: #383d41;
@@ -25,8 +24,8 @@
 
 .register-right {
     background: #f8f9fa;
-    border-top-left-radius: 10% 50%;
-    border-bottom-left-radius: 10% 50%;
+    border-radius: 10px ;
+    padding-bottom: 20px;
 }
 
 .register-left img {
@@ -64,7 +63,7 @@
 }
 
 .register .register-form {
-    padding: 10% 10% 5% 10%;
+    padding-top: 10%;
     margin-top: 10%;
     justify-content: center;
 }
