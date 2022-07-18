@@ -50,39 +50,41 @@
                         <!-- Modal content -->
                         <div class="modal-content">
                           <span class="close"><i class="fa fa-close" style="padding: 5px 10px; border: 5px solid; border-radius: 100%" ></i></span>
-                          <div class="forms">
-                            <ul class="tab-group">
-                                <li class="tab active"><a href="#login">লগ ইন </a></li>
-                                <li class="tab"><a href="#signup">রেজিস্টার </a></li>
-                            </ul>
-                            <form action="#" id="login">
-                                  <h1>Login on TX Academy</h1>
-                                  <div class="input-field">
-                                    <label for="email">ই-মেইল </label>
-                                    <input type="email" name="email" required="email" />
-                                    <label for="password">পাসওয়ার্ড </label> 
-                                    <input type="password" name="password" required/>
-                                    <input type="submit" value="লগ ইন করুন" class="button"/>
-                                    <p class="text-p"> <a href="#"> পাসওয়ার্ড ভুলে গেছি ?</a> </p>
-                                  </div>
-                              </form>
-                              <form action="#" id="signup">
-                                  <h1>Sign Up on TX Academy</h1>
-                                  <div class="input-field">
-                                    <label for="file">আপনার ছবি দিন </label> 
-                                    <input type="file" name="file" required="file"/>
-                                    <label for="name">সার্টিফিকেটের নাম </label> 
-                                    <input type="text" name="name" required="name"/>
-                                    <label for="email">ই-মেইল</label> 
-                                    <input type="email" name="email" required="email"/>
-                                    <label for="password">পাসওয়ার্ড </label> 
-                                    <input type="password" name="password" required/>
-                                    <label for="password">পাসওয়ার্ড নিশ্চিত করুন </label> 
-                                    <input type="password" name="password" required/>
-                                    <input type="submit" value="রেজিস্টার করুন " class="button" />
-                                  </div>
-                              </form>
-                        </div>
+                          <div class="form-wrap">
+                            <div class="tabs">
+                                <h3 class="signup-tab"><a class="active" href="#signup-tab-content">Sign Up</a></h3>
+                                <h3 class="login-tab"><a href="#login-tab-content">Login</a></h3>
+                            </div><!--.tabs-->
+                    
+                            <div class="tabs-content">
+                                <div id="signup-tab-content" class="active">
+                                    <form class="signup-form" action="" method="post">
+                                        <input type="email" class="input" id="user_email" autocomplete="off" placeholder="Email">
+                                        <input type="text" class="input" id="user_name" autocomplete="off" placeholder="Username">
+                                        <input type="password" class="input" id="user_pass" autocomplete="off" placeholder="Password">
+                                        <input type="submit" class="button" value="Sign Up">
+                                    </form><!--.login-form-->
+                                    <div class="help-text">
+                                        <p>By signing up, you agree to our</p>
+                                        <p><a href="#">Terms of service</a></p>
+                                    </div><!--.help-text-->
+                                </div><!--.signup-tab-content-->
+                    
+                                <div id="login-tab-content">
+                                    <form class="login-form" action="" method="post">
+                                        <input type="text" class="input" id="user_login" autocomplete="off" placeholder="Email or Username">
+                                        <input type="password" class="input" id="user_pass" autocomplete="off" placeholder="Password">
+                                        <input type="checkbox" class="checkbox" id="remember_me">
+                                        <label for="remember_me">Remember me</label>
+                    
+                                        <input type="submit" class="button" value="Login">
+                                    </form><!--.login-form-->
+                                    <div class="help-text">
+                                        <p><a href="#">Forget your password?</a></p>
+                                    </div><!--.help-text-->
+                                </div><!--.login-tab-content-->
+                            </div><!--.tabs-content-->
+                        </div><!--.form-wrap-->
                        </div>
                     </div>
                 </li>
@@ -639,6 +641,20 @@
         });
     });
     </script>
+<script>
+    jQuery(document).ready(function($) {
+	tab = $('.tabs h3 a');
 
+	tab.on('click', function(event) {
+		event.preventDefault();
+		tab.removeClass('active');
+		$(this).addClass('active');
+
+		tab_content = $(this).attr('href');
+		$('div[id$="tab-content"]').removeClass('active');
+		$(tab_content).addClass('active');
+	});
+});
+</script>
 </body>
 </html>
